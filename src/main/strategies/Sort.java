@@ -1,9 +1,12 @@
 package main.strategies;
 
 import java.util.List;
+import java.util.Random;
 
+import main.game.Player;
 import main.game.map.Map;
 import main.game.map.Point;
+import main.game.map.TreasureChest;
 
 public class Sort implements Strategy{
 	/**

@@ -10,8 +10,8 @@ import java.util.Random;
 import main.game.Player;
 
 public class Map {
-	private static final int[] ROCK_POSITIONS_X = {2, 3, 4, 5, 6};
-	private static final int[] ROCK_POSITIONS_Y = {2, 3, 4, 5, 6};
+	private static final int[] ROCK_POSITIONS_X = {0, 1, 2, 3, 4, 5, 6};
+	private static final int[] ROCK_POSITIONS_Y = {0, 1, 2, 3, 4, 5, 6};
 
 	private String [][] scenario;
 	private Point robotLocation;
@@ -104,8 +104,13 @@ public class Map {
 		int rockCount = 0;
 		while(rockCount < 3) {
 	
-	        int indexRandomX = random.nextInt(ROCK_POSITIONS_X.length);
-	        int indexRandomY = random.nextInt(ROCK_POSITIONS_Y.length);
+			int indexRandomX = random.nextInt(ROCK_POSITIONS_X.length);
+	        int indexRandomY;
+	        if(indexRandomX < 2) {
+	        	indexRandomY = random.nextInt(2, ROCK_POSITIONS_Y.length);
+	        } else {
+	        	indexRandomY = random.nextInt(ROCK_POSITIONS_Y.length);
+	        }
 	        
 	        int positionX1 = ROCK_POSITIONS_X[indexRandomX];
 	        int positionY1 = ROCK_POSITIONS_X[indexRandomY];
