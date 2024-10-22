@@ -1,6 +1,5 @@
 package main.strategies;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import main.game.map.Map;
@@ -18,33 +17,6 @@ public class FewerObstacles implements Strategy{
 	@Override
 	public Point evaluatePossbileNextStep(List<Point> possibleNextStep, Map map) {
 		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-	private List<Point> evaluatePoints(List<Point> possibleNextSteps, Map map) {
-		
-		/*for (int i = 0; i < possibleNextSteps.size(); i++) {
-			List<Point> evaluatePoints = new ArrayList<Point>();
-			evaluatePoints.add(new Point(robotLocation.getPositionX() - 1, robotLocation.getPositionY() - 1));
-			evaluatePoints.add(new Point(robotLocation.getPositionX() - 1, robotLocation.getPositionY()));
-			evaluatePoints.add(new Point(robotLocation.getPositionX() - 1, robotLocation.getPositionY() + 1));
-			evaluatePoints.add(new Point(robotLocation.getPositionX(), robotLocation.getPositionY() - 1));
-			
-			evaluatePoints.add(new Point(robotLocation.getPositionX(), robotLocation.getPositionY() + 1));
-			evaluatePoints.add(new Point(robotLocation.getPositionX() + 1, robotLocation.getPositionY() - 1));
-			evaluatePoints.add(new Point(robotLocation.getPositionX() + 1, robotLocation.getPositionY()));
-			evaluatePoints.add(new Point(robotLocation.getPositionX() + 1, robotLocation.getPositionY() + 1));
-			
-			for (int i = 0; i < evaluatePoints.size(); i++) {
-				Point p = evaluatePoints.get(i);
-				int[] scenarioSize = map.getScenarioSize();
-				if (p.getPositionX() < 0 || p.getPositionY() < 0 ||
-						p.getPositionX() >= scenarioSize[0] || p.getPositionY() >= scenarioSize[1]) {
-					evaluatePoints.remove(p);
-				}
-			}
-		}*/
 		return null;
 	}
 
